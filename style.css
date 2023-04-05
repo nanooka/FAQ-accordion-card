@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kumbh Sans";
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #6463e7;
+}
+.container {
+  margin: 24px;
+  margin-top: 150px;
+  margin-bottom: 80px;
+  padding: 24px;
+  padding-bottom: 48px;
+  border-radius: 23px;
+  background-color: white;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  width: 100%;
+  max-width: 920px;
+}
+h1 {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  color: #1e1f36;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+}
+p {
+  color: #4b4c5f;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+span {
+  color: #787887;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-right: 20px;
+  display: none;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.q-a {
+  margin-top: 19px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #e8e8ea;
+  padding-bottom: 18px;
+}
+.illustration {
+  position: relative;
+}
+.bg-mobile {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -24px);
+}
+.woman-mobile {
+  width: 240px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -135px);
+}
+.box {
+  display: none;
+}
+.bold .text .question {
+  font-weight: 700;
+}
+.visible .text .answer {
+  display: inline-block;
+}
+.rotate .arrows .arrow {
+  transform: rotate(3.142rad);
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    height: 509px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 95px;
+    padding-bottom: 85px;
+    background-image: url(./images/illustration-woman-online-desktop.svg),
+      url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%, 100%;
+    background-position: -80px 80px, -540px -270px;
+  }
+  .info {
+    margin-left: 50px;
+  }
+  h1 {
+    text-align: start;
+    margin-top: 65px;
+  }
+  p {
+    font-size: 14px;
+    cursor: pointer;
+  }
+  p:hover {
+    color: #f47b56;
+  }
+  .bg-mobile,
+  .woman-mobile {
+    display: none;
+  }
+  .box {
+    display: inline-block;
+    position: absolute;
+    top: 180px;
+    left: -117px;
+  }
+  .arrow {
+    cursor: pointer;
+  }
+}
